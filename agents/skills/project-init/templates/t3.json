@@ -1,0 +1,9 @@
+{
+  "$schema": "https://t3.codes/schema/t3.json",
+  "defaultThreadEnvMode": "local",
+  "scripts": [
+    { "name": "Prepare worktree", "command": "scripts/worktree-setup.sh", "icon": "configure", "runOnWorktreeCreate": true, "async": false },
+    { "name": "Dev", "command": "<dev command>", "icon": "play", "previewUrl": "http://localhost:<port>" },
+    { "name": "Test", "command": "<test command>", "icon": "test" }
+  ]
+}
